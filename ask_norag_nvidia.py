@@ -77,7 +77,7 @@ STREAM_ON = True
 # without actually finding the specific information about Denis.
 
 crime_and_punishment_text = ""
-with open("docs/CrimeAndPunishment.txt", "r") as f:
+with open("docs/CrimeAndPunishment.txt", "r", encoding ="utf-8") as f:
     crime_and_punishment_text = f.read()
 
 # Create a truncated version of the text to ensure it fits the 250k context window of the model
